@@ -30,8 +30,6 @@ $(document).ready(function() {
             $(this).parent().removeClass('show');
         }
     });
-
-
 });
 
 $(document).ready(function() {
@@ -47,20 +45,18 @@ $(document).ready(function() {
 });
 
 jQuery(function($){
-    $(document).mouseup(function (e){ // событие клика по веб-документу
-        var div = $(".pers-acc__header-nav"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            // div.hide(); // скрываем его
+    $(document).mouseup(function (e){
+        var div = $(".pers-acc__header-nav");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
             $(".pers-acc__header-nav").removeClass("active");
         }
     });
 
-    $(document).mouseup(function (e){ // событие клика по веб-документу
-        var div = $(".top-main-menu__items"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            // div.hide(); // скрываем его
+    $(document).mouseup(function (e){
+        var div = $(".top-main-menu__items");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
             $(".top-main-menu__items").removeClass("active");
         }
     });
@@ -100,7 +96,6 @@ $(window).width(function() {
             $('.people-bg__three').append('<img src="img/index-page/three-people__pln.svg" alt="">');
         });
     }
-
 });
 
 $(document).ready(function () {
@@ -116,110 +111,4 @@ $(document).ready(function () {
             $(".shopping-list").css("display","none");
         }
     });
-
-
-
 });
-
-// $('#accordionExample').on('shown.bs.collapse', function () {
-//     $(".card-header__radio").addClass("table-nutrition-accordion__top");
-// });
-
-
-
-// $(document).ready(function () {
-//     $('.card-header').click(function () {
-//         if($(".table-nutrition-accordion__collapse").hasClass('show')) {
-//             $(this).parent().removeClass('test');
-//         } else {
-//             $(this).parent().addClass('test');
-//         }
-//     })
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $('.form-group').find('input').each(function(){
-//     if(!$(this).prop('required')){
-//         alert('1');
-//     } else {
-//         alert('2');
-//     }
-// });
-
-
-
-// $(document).ready(function() {
-//     if ($('#weightForm3').is(':disabled')) {
-//         $(this).parent().addClass('test');
-//     }
-// });
-
-
-//
-// $(".form-group").change(function() {
-//     if ($(this).val().trim().length) {
-//         $(this).addClass("ui-placeholder");
-//     } else {
-//         $(this).removeClass("ui-placeholder");
-//     }
-// });
-//
-// $('.form-control').change(function(){
-//     tmpval = $(this).val();
-//     if(tmpval == '') {
-//         $('.form-group').removeClass('active');
-//     } else {
-//         $('.form-group').addClass('active');
-//     }
-// });
-
-
-
-
-
-// $('.pers-acc-profile__input').on('blur', function(){
-//     $(this).parent().removeClass('input-desc-hover');
-// }).on('focus', function(){
-//     $(this).parent().addClass('input-desc-hover');
-// });
-
-
-
-
-
-
-
-
-
-
-
-// function setHeiHeight() {
-//     $('#main-header').css({
-//         height: $(window).height() + 'px'
-//     });
-// }
-//
-// setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
-// $(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
-
