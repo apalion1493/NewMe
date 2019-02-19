@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
+    <!--<link rel="stylesheet" href="libs/onepage-scroll/onepage-scroll.css">-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
@@ -11,7 +12,7 @@
 </head>
 <body>
 
-<section class="main-header absolute-height">
+<section class="scroll-full main-header absolute-height">
     <div class="container absolute-height">
         <div class="row absolute-height">
             <div class="col-12 absolute-height">
@@ -72,7 +73,7 @@
                     <div class="main-header__bg-icon main-header__bg-ten"></div>
                     <div class="main-header__bg-icon main-header__bg-eleven"></div>
                     <div class="main-header__animation-human">
-                        <video id="mainVideo">
+                        <video id="mainVideo" muted="muted">
                             <source src="animations/1_main.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
                             <source src="animations/1_main.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
                         </video>
@@ -84,7 +85,7 @@
         <div class="main-header__arrow"></div>
     </div>
 </section>
-<section class="model-selection-section absolute-height">
+<section class="scroll-full model-selection-section absolute-height">
     <div class="container absolute-height">
         <h3>Выберите модель программирования <span>на 30 дней</span></h3>
         <ul class="nav nav-pills mb-3 justify-content-center model-selection-section__tabs" id="pills-tab" role="tablist">
@@ -110,7 +111,7 @@
                     <div class="col-lg-6 col-md-6 col-xl-3 people-bg-col">
                         <div class="people-bg people-bg__first">
                             <!--<img src="img/index-page/first-piple.svg" alt="Описание картинки">-->
-                            <video id="videoSlim">
+                            <video id="videoSlim" muted="muted">
                                 <source src="animations/2_slim.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
                                 <source src="animations/2_slim.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
                             </video>
@@ -187,7 +188,7 @@
                     <div class="col-md-6 col-lg-5 people-bg-col">
                         <div class="people-bg people-bg__second">
                             <!--<img src="img/index-page/second-people.svg" alt="Описание картинки">-->
-                            <video id="videoFit">
+                            <video id="videoFit" muted="muted">
                                 <source src="animations/3_fit.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
                                 <source src="animations/3_fit.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
                             </video>
@@ -233,7 +234,7 @@
                     <div class=" col-md-6 col-lg-7 people-bg-col">
                         <div class="people-bg people-bg__three">
                             <!--<img src="img/index-page/three-people.svg" alt="Описание картинки">-->
-                            <video id="videoGain">
+                            <video id="videoGain" muted="muted">
                                 <source src="animations/4_gain.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
                                 <source src="animations/4_gain.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
                             </video>
@@ -244,7 +245,7 @@
         </div>
     </div>
 </section>
-<section class="new-me-bg-line">
+<section id="test123" class="scroll-full new-me-bg-line">
     <div class="new-me-bg-bottom"></div>
     <div class="new-me-main-text">
         <div class="container">
@@ -351,20 +352,25 @@
 </section>
 
 
-
 <!-- JAVASCRIPT ================================================== -->
-
 <!-- JS Global -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>-->
-<script src="js/pages/test.js"></script>
+
+<script type="text/javascript" src="libs/Scrollify/jquery.scrollify.js"></script>
+
+<script type="text/javascript" src="js/pages/test.js"></script>
+
 
 <!-- JS Inline -->
-<script>
+<script type="text/javascript">
     $('[data-toggle="popover"]').popover();
     $('[data-toggle="tooltip"]').tooltip();
+
+    $.scrollify({
+        section : "section"
+    });
 </script>
 
 

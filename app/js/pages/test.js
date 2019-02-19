@@ -149,3 +149,9 @@ vid4.addEventListener('mouseenter', function() {
     vid4.play();
 });
 
+$(document).ready(function() {
+    $.scrollify({
+        section : ".scroll-full",
+    });
+});
+
